@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Выберите размер бургера</legend>
+            <input type="radio" name="size" id="small" checked='false'>
+            <label for="small">Маленький</label><br>
+            <input type="radio" name="size" id="big">
+            <label for="big">Большой</label>
+        
+            <legend>Выберите начинку</legend>
+            <input type="radio" name="topping" id="cheese" checked='false'>
+            <label for="cheese">С сыром</label><br>
+            <input type="radio" name="topping" id="salad">
+            <label for="salad">С салатом</label><br>
+            <input type="radio" name="topping" id="potatoes">
+            <label for="potatoes">С картошкой</label>
+       
+            <legend>Дополнительный ингредиент</legend>
+            <input type="checkbox" id="spice">
+            <label for="spice">Приправа</label><br>
+            <input type="checkbox" id="sauce">
+            <label for="sauce">Майонез</label><br>
+
+            <input class="button" type="submit" value="Посчитать стоимость">
+        </fieldset>
+
+        
+    </form>
+    <div class="total"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
