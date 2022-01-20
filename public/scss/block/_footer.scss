@@ -1,0 +1,131 @@
+.footer {
+
+    &__subscribe {
+        
+        background-image: url(../img/background_footer.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    &__subscribe-container {
+        min-height: 448px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__figure {
+        width: 360px;
+        height: 225px;
+        text-align: center;
+    }
+
+    &__img {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $black;
+    }
+
+    &__italic {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__form {
+        max-width: 557px;
+        height: 142px;
+        text-align: center;
+    }
+
+    &__copyright {
+        background-color: $black;
+    }
+
+    &__list {
+        width: 148px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 32px;
+        height: 32px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: $pink;
+        }
+
+        &:focus {
+            background-color: $pink;
+        }
+
+        &:active {
+            background-color: $pink;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .footer {
+
+        &__subscribe-container {
+            flex-direction: column;
+        }
+
+        &__figure {
+            margin-top: 64px;
+            margin-bottom: 48px;
+        }
+
+        &__form {
+            margin-bottom: 140px;
+        }
+
+        &__list {
+            margin-right: 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+
+        &__subscribe-container {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        &__figure {
+            margin-bottom: 59px;
+        }
+
+        &__form {
+            margin-bottom: 110px;
+        }
+
+        &__text {
+            @include font (18px, 22px, 400);
+            padding-left: 16px;
+        }
+
+        &__italic {
+            @include font (18px, 22px, 400, italic);
+        }
+        &__list {
+            margin: 43px 0 40px 0;
+        }
+    }
+}

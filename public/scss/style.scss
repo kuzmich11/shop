@@ -1,0 +1,35 @@
+@import './fonts';
+
+@import './_variables.scss';
+
+@import './_mixin.scss';
+
+@import './_general.scss';
+
+@import './block/_header.scss';
+
+@import './block/header-submenu';
+
+@import './block/hero';
+
+@import './block/sale';
+
+@import './block/catalog';
+
+@import './block/service';
+
+@import './block/footer';
+
+@import './block/footer-form';
+
+@import './block/copyright';
+
+@import './block/heading';
+
+@import './block/registration';
+
+@import './block/card';
+
+@import './block/cart';
+
+@import './block/catalog-grid';

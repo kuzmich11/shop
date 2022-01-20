@@ -1,0 +1,150 @@
+.registration {
+    display: flex;
+    margin: 64px auto 96px;
+
+    &__form {
+        width: 360px;
+        margin: 0 128px 0 0;
+    }
+
+    &__text {
+        @include font (16px, 19px, 300);
+        color: $black;
+    }
+
+    &__input {
+        width: 360px;
+        height: 45px;
+        color: $black;
+        @include font (13px, 16px, 300);
+        padding-left: 16px;
+        border: 1px solid #A4A4A4;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+        &:hover {
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            outline: 1px solid $pink;
+        }
+    }
+
+    &__gender {
+        display: flex;
+        align-items: center;
+        margin: 31px 0 33px 0;
+    }
+
+    &__gender-radio {
+        width: 17px;
+        height: 17px;
+
+        &:hover {
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            outline: 1px solid $pink;
+        }
+    }
+
+    &__gender-lable {
+        padding-left: 10px;
+        padding-right: 20px;
+        @include font (11px, 13px, 300);
+        color: #000;
+    }
+
+    &__hint {
+        @include font (13px, 16px, 300);
+        color: #b1b1b1;
+        margin: 15px 0 39px 0;
+    }
+
+    &__button {
+        @include font (14px, 17px, 400);
+        text-transform: uppercase;
+        background-color: $pink;
+        color: #fff;
+        width: 167px;
+        height: 50px;
+        border: none;
+
+        &::after {
+            content: url(../img/arrow.svg);
+            padding-left: 20px;
+        }
+
+        &:hover {
+            outline: 1px solid $pink;
+        }
+
+        &:focus {
+            outline: 1px solid $pink;
+        }
+
+        &:active {
+            outline: 1px solid $pink;
+        }
+    }
+
+    &__promo {
+        @include font (24px, 29px, 300);
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+
+    &__list {
+        margin-top: 21px;
+        list-style-image: url(../img/V.svg);
+        margin-left: 28px;
+    }
+
+    &__item {
+        margin-bottom: 16px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .registration {
+        margin: 40px 16px 96px;
+        
+        &__form {
+            margin-right: 22px;
+        }
+
+        &__promo {
+            @include font (16px, 19px, 300);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .registration {
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 8px 96px;
+
+        &__promo {
+            margin-top: 40px;
+        }
+
+        &__form {
+            margin: auto;
+        }
+    }
+}
